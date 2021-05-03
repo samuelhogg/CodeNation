@@ -26,7 +26,17 @@ body {
     text-decoration: none;
     font-size: 14px;
 }
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
   
+#navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
 /* Page content */
 .content {
     padding: 16px;
