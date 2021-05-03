@@ -1,5 +1,15 @@
-html {
+html.index {
     background: url("images/hollywood.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+html.topten {
+    background: url("images/oscar.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+html.blacklist {
+    background: url("images/popcorn.jpg") no-repeat center fixed;
     background-size: cover;
 }
 
