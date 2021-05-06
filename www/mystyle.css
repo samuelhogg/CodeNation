@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 20%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 60%;
+    text-align: center;  
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column.side, .column.middle {
+    width: 100%;
+}
+}
+
+html.index {
+    background: url("images/hollywood.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+html.topten {
+    background: url("images/oscar.jpg") no-repeat top;
+    background-size: cover;
+}
+
+html.blacklist {
+    background: url("images/popcorn.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+.imgheader {
+    background: url("images/header.png") no-repeat center;
+    width:100%;
+    height: 300px;
+}
+
+.imgheader:hover {
+    background: url("images/altheader.png") no-repeat center;
+}
+
+body {
+    font-size: 24px;
+    font-family: serif;
+    text-align: center;
+}
+
+a {
+    font-style: italic;
+    color:blue;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* Create two equal columns that floats next to each other */
+.columntt {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    font-size: 24px;
+    font-family: serif;
+    color:cornsilk
+}
+
+.columnbl {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    font-size: 24px;
+    font-family: serif;
+    color:black
+}
+
+/* Clear floats after the columns */
+.rowtt:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color:transparent;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: navy;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#navbar a:hover {
+    background-color: orange;
+    color: skyblue;
+}
+
+#navbar a.active {
+    background-color:transparent;
+    color: skyblue;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 50px;
+}
